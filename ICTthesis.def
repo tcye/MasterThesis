@@ -1,0 +1,79 @@
+
+\ProvidesFile{ICTthesis.def}[2008/07/01 ICT, CAS thesis definition file, version 1.0.0]
+
+% General
+\def\ICT@label@school{中国科学院研究生院}
+\def\ICT@label@schoolmark{中国科学院}
+\def\ICT@label@thesis{学位论文}
+
+% 封面
+\def\ICT@label@cover@classification{分类号}
+\def\ICT@label@cover@confidential{密级：}
+\def\ICT@label@cover@UDC{UDC}
+\def\ICT@label@cover@serialnumber{编号}
+\def\ICT@label@cover@advisor{指导教师：}
+\def\ICT@label@cover@author{作者姓名：}
+\def\ICT@label@cover@degree{学位类别：}
+\def\ICT@label@cover@major{学科专业：}
+\def\ICT@label@cover@submit@date{论文提交日期}
+\def\ICT@label@cover@defend@date{论文答辩日期}
+\def\ICT@label@cover@institute{培养单位：}
+\def\ICT@label@cover@degree@school{学位授予单位}
+\def\ICT@label@cover@defend@chairman{答辩委员会主席}
+
+% 声明和版权
+\def\ICT@label@stat@statement{声\hspace{2em}明}
+\def\ICT@lable@stat@copyright{论文版权使用授权书}
+\def\ICT@lable@stat@auther{作者签名：}
+\def\ICT@lable@stat@advisor{导师签名：}
+\def\ICT@lable@stat@date{日期：}
+
+\def\ICT@value@stat@statement{我声明本论文是我本人在导师指导
+下进行的研究工作及取得的研究成果。尽我所知，除了文中特别加以
+标注和致谢的地方外，本论文中不包含其他人已经发表或撰写过的研
+究成果。与我一同工作的同志对本研究所做的任何贡献均已在论文中
+作了明确的说明并表示了谢意。}
+\def\ICT@value@stat@copyright{本人授权中国科学院计算技术研究
+所可以保留并向国家有关部门或机构送交本论文的复印件和电子文档，
+允许本论文被查阅和借阅，可以将本论文的全部或部分内容编入有关
+数据库进行检索，可以采用影印、缩印或扫描等复制手段保存、汇编
+本论文。\par （保密论文在解密后适用本授权书。）}
+
+% chapter
+\def\ICT@chapter@prenumber{第}
+\def\ICT@chapter@afternumber{章}
+
+% 图表名称
+\def\ICT@label@figure@cap{图}
+\def\ICT@label@table@cap{表}
+
+% 摘要
+\def\ICT@label@abstract{摘\hspace{2em}要}
+\def\ICT@toc@abstract{摘要}
+\def\ICT@label@keywords{关键词：}
+\def\ICT@elabel@keywords{Keywords:}
+
+% 目录
+\def\ICT@label@content{目\hspace{2em}录}
+\def\ICT@toc@content{目录}
+\def\ICT@label@listoffigures{图~~目~~录}
+\def\ICT@toc@listoffigures{图目录}
+\def\ICT@label@listoftables{表~~目~~录}
+\def\ICT@toc@listoftables{表目录}
+
+% 参考文献
+\def\ICT@label@ref@title{参~~考~~文~~献}
+\def\ICT@toc@ref@title{参考文献}
+
+% 致谢
+\def\ICT@label@thanks{致\hspace{2em}谢}
+\def\ICT@toc@thanks{致谢}
+
+% 简历
+\def\ICT@label@resume@title{作~~者~~简~~历}
+\def\ICT@toc@resume@title{作者简历}
+\def\ICT@label@resume@baseinfo{基本情况}
+\def\ICT@label@resume@name{姓名：}
+\def\ICT@label@resume@sex{性别：}
+\def\ICT@label@resume@birthday{出生日期：}
+\def\ICT@label@resume@place{籍贯：}
