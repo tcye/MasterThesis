@@ -6,7 +6,7 @@
 近年来备受研究人员关注的显著区域检测算法为解决上述问题提供了一个方向，通过对图像进行显著性分析，可以检测并定位人们感兴趣的物体，从而为一般物体的检测定位提供了极大的参考价值。本文深入调研了显著区域检测的各类典型算法，包括基于局部对比度、基于全局对比度、基于频域分析，以及基于机器学习的算法，同时对比了各类算法的优缺点，在此基础上围绕图像的显著性分析及其应用展开了研究，获得如下研究成果：
 \begin{enumerate}
   \item 基于条件随机场的显著区域检测算法。首先提出了全局颜色对比度、全局颜色紧致度、全局颜色中心度以及局部颜色对比度四种显著性特征，随后通过条件随机场模型，实现对这四种特征的有效融合，高效计算图像的显著图。实验表明，该方案能够充分地利用各类特征挖掘图像的显著性，与原有性能较高的FT和RC算法相比，平均F-score分别高出0.2和0.1，且对阈值不敏感，稳定性高。
-  \item 基于蒙特卡洛采样的显著区域检测算法。我们观察到，图像的显著区域在空间上的约束条件能够大幅度提升检测效果，然而，原有紧密性、连通性和包络性等空间约束条件都是二值化的概念，原有显著性计算框架无法有效融入这些约束条件。为此，我们提出了基于蒙特卡洛采样的显著区域检测框架，实现了多空间约束条件的高效融合。我们在ASD、ECSSD两个公共数据集上进行了实验，实验表明，我们的算法在准确率、召回率上均超过经典算法或与之相当，同时与RC、GB等性能相当的算法相比，时间复杂度降低了60\%以上。
+  \item 基于蒙特卡洛采样的显著区域检测算法。我们观察到，图像的显著区域在空间上的约束条件能够大幅度提升检测效果，然而，原有紧密性、连通性和包络性等空间约束条件都是二值化的概念，原有显著性计算框架无法有效融入这些约束条件。为此，我们提出了基于蒙特卡洛采样的显著区域检测框架，实现了多空间约束条件的高效融合。我们在ASD、ECSSD两个公共数据集上进行了实验，实验表明，我们的算法在准确率、召回率上均超过经典算法或与之相当，同时与RC、GB等算法相比，时间复杂度降低了60\%以上。
   \item 显著区域检测在图像检索上的应用。我们选取了图像检索这个应用场景，验证显著区域检测算法的实际应用价值，实现了一个基于经典BOF模型的图像检索系统，并在该系统上融入以上所提出的显著区域检测算法。实验表明，显著区域检测算法提高了系统5\%以上的准确率(mAP)，有效提升了图像检索系统的性能。
 \end{enumerate}
 
@@ -16,16 +16,15 @@
 
 \begin{englishabstract}
 
-As the population of digital camera and mobile devices, images have already become the frequently used method for people to record their lives. Automatically processing and analysing the images have also been the most wanted problems to be solved. However, general object detection which is many tasks' foundation is something hard to solve until now.
+As the popularity of digital cameras and mobile devices, images have already been one of the commonest ways to record the lives. Automatically processing and analysing the images have also become the most urgent problems to be solved. However, general object detection, foundation of many computer vision processing system, faces many challenges.
 
-Recently, salient region detection has attracted many researchers' attention, and it provides an solution for general object detection. We made a deep research on this topic, and our mainly achievements are listed as follows:
+Recently, salient region detection has attracted many researchers' attention, and it provides an solution for general object detection. We made a deep research on this topic and surveyed some classic algorithms(including local contrast based methods, global contrast based methods, frequency domain based methods and machine learning based methods). The achievements are listed as follows:
 \begin{enumerate}
-  \item A survey about salient region detection has been made. We investigate the state-of-the-art method on salient region detection until now, including local contrast based method, global contrast based method, frequency domain based method and machine learning based method.
-  \item Salient region detection based on conditional random field(CRF). We firstly propose some salient cues such as color contrast, color centering, color compactness etc. Then a CRF model is proposed to integrate these salient cues. Experiments show that our method is efficient and practical.
+  \item Salient region detection based on conditional random field(CRF). We firstly propose some effective salient cues such as color contrast, color centering, color compactness etc. Then a CRF model is proposed to integrate these salient cues. Experiments show that our method is efficient and practical.
   \item Salient region detection based on Monte Carlo sampling. Based on the observation that salient regions tend to be compact, connected and surrounded, However, concepts of spatial structure only have definite meanings in binary images. Thus, a Monte Carlo Sampling based Saliency model is proposed to utilize these features. Experimental results on two datasets show that, compared with eleven state-of-the-art methods, our approach has a competitive performance and also runs very fast.
   \item Salient region detection applied to image retrieval. We evaluate the performance of salient region detection when applied to image retrieval. A BOF based image retrieval system is realized. Then we integrate salient region detction into this system. Experiments show that, salient region detection indeed raise the performance of image retrieval system.
 \end{enumerate}
 
-\englishkeywords{Computer Vision, Image Processing, Salient Region Detection, Object Detection, Image Retrieval}
+\englishkeywords{Computer Vision, Image Retrieval, Image Processing, Salient Region Detection, Object Detection}
 
 \end{englishabstract}
